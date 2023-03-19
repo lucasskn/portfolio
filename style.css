@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: #181823;
+  height: 200vh;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0b1536;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0b1536;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #0f265c;
+}
+
+.head {
+  height: 100vh;
+  background: url(data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnICB3aWR0aD0nNDAwJyBoZWlnaHQ9JzQwMCcgdmlld0JveD0nMCAwIDgwMCA4MDAnPjxyZWN0IGZpbGw9JyMxODE4MjMnIHdpZHRoPSc4MDAnIGhlaWdodD0nODAwJy8+PGcgZmlsbD0nbm9uZScgc3Ryb2tlPScjMEQxNTMyJyAgc3Ryb2tlLXdpZHRoPScxJz48cGF0aCBkPSdNNzY5IDIyOUwxMDM3IDI2MC45TTkyNyA4ODBMNzMxIDczNyA1MjAgNjYwIDMwOSA1MzggNDAgNTk5IDI5NSA3NjQgMTI2LjUgODc5LjUgNDAgNTk5LTE5NyA0OTMgMTAyIDM4Mi0zMSAyMjkgMTI2LjUgNzkuNS02OS02MycvPjxwYXRoIGQ9J00tMzEgMjI5TDIzNyAyNjEgMzkwIDM4MiA2MDMgNDkzIDMwOC41IDUzNy41IDEwMS41IDM4MS41TTM3MCA5MDVMMjk1IDc2NCcvPjxwYXRoIGQ9J001MjAgNjYwTDU3OCA4NDIgNzMxIDczNyA4NDAgNTk5IDYwMyA0OTMgNTIwIDY2MCAyOTUgNzY0IDMwOSA1MzggMzkwIDM4MiA1MzkgMjY5IDc2OSAyMjkgNTc3LjUgNDEuNSAzNzAgMTA1IDI5NSAtMzYgMTI2LjUgNzkuNSAyMzcgMjYxIDEwMiAzODIgNDAgNTk5IC02OSA3MzcgMTI3IDg4MCcvPjxwYXRoIGQ9J001MjAtMTQwTDU3OC41IDQyLjUgNzMxLTYzTTYwMyA0OTNMNTM5IDI2OSAyMzcgMjYxIDM3MCAxMDVNOTAyIDM4Mkw1MzkgMjY5TTM5MCAzODJMMTAyIDM4MicvPjxwYXRoIGQ9J00tMjIyIDQyTDEyNi41IDc5LjUgMzcwIDEwNSA1MzkgMjY5IDU3Ny41IDQxLjUgOTI3IDgwIDc2OSAyMjkgOTAyIDM4MiA2MDMgNDkzIDczMSA3MzdNMjk1LTM2TDU3Ny41IDQxLjVNNTc4IDg0MkwyOTUgNzY0TTQwLTIwMUwxMjcgODBNMTAyIDM4MkwtMjYxIDI2OScvPjwvZz48ZyAgZmlsbD0nIzEyMUI0OSc+PGNpcmNsZSAgY3g9Jzc2OScgY3k9JzIyOScgcj0nNScvPjxjaXJjbGUgIGN4PSc1MzknIGN5PScyNjknIHI9JzUnLz48Y2lyY2xlICBjeD0nNjAzJyBjeT0nNDkzJyByPSc1Jy8+PGNpcmNsZSAgY3g9JzczMScgY3k9JzczNycgcj0nNScvPjxjaXJjbGUgIGN4PSc1MjAnIGN5PSc2NjAnIHI9JzUnLz48Y2lyY2xlICBjeD0nMzA5JyBjeT0nNTM4JyByPSc1Jy8+PGNpcmNsZSAgY3g9JzI5NScgY3k9Jzc2NCcgcj0nNScvPjxjaXJjbGUgIGN4PSc0MCcgY3k9JzU5OScgcj0nNScvPjxjaXJjbGUgIGN4PScxMDInIGN5PSczODInIHI9JzUnLz48Y2lyY2xlICBjeD0nMTI3JyBjeT0nODAnIHI9JzUnLz48Y2lyY2xlICBjeD0nMzcwJyBjeT0nMTA1JyByPSc1Jy8+PGNpcmNsZSAgY3g9JzU3OCcgY3k9JzQyJyByPSc1Jy8+PGNpcmNsZSAgY3g9JzIzNycgY3k9JzI2MScgcj0nNScvPjxjaXJjbGUgIGN4PSczOTAnIGN5PSczODInIHI9JzUnLz48L2c+PC9zdmc+);
+  background-size: 60vh;
+  padding-top: 230px;
+  color: #E9F8F9;
+}
+
+.head .animate__bounceInLeft{
+  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.4s; /* don't forget to set a duration! */
+}
+
+.head span {
+  color: #537FE7;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 0.7rem;
+}
+
+h1,p{
+  color: #E9F8F9;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+#sociais {
+  margin: 4rem auto auto 30%;
+  float: left;
+}
+
+#myskills {
+  margin: 4rem 30% auto auto;
+  float: right;
+}
+
+
+#sociais, p, #myskills, p {
+  font-weight: 600;
+  font-size: 22px;
+  padding: 20px;
+}
+
+#sociais a, #myskills a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #537FE7;
+}
+
+#myskills a:hover{
+  color: #E9F8F9;
+}
+
+#sociais a:hover{
+  color: #E9F8F9;
+}
+
+.me{
+  padding: 120px 0 80px;
+  margin-bottom: 50px;
+}
+
+.me span {
+  color: #537FE7;
+}
+
+.skills {
+  text-align: center;
+  gap: 4rem;
+}
+
+.skillIcons {
+  position: relative;
+  width: 10rem;
+}
+
+.skill1, .skill3 {
+  margin-left: 20rem;
+  float: left;
+}
+
+.skillText,.skillText3 {
+  float: right;
+  display: flex;
+  width: 50rem;
+  margin-bottom: 6rem;
+}
+
+.skill2 {
+  margin-right: 20rem;
+  float: right;
+}
+
+.skillText2 {
+  display: flex;
+  width: 50rem;
+  float: left;
+  margin-bottom: 6rem;
+}
+
+.skills p {
+  font-weight: 500;
+}
+@keyframes fadeIn {
+  from {
+    scale: 0.1;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+
