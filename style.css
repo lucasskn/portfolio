@@ -40,8 +40,8 @@ body {
 }
 
 .head .animate__bounceInLeft{
-  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.4s; /* don't forget to set a duration! */
+  animation: bounceInLeft;
+  animation-duration: 0.4s; 
 }
 
 .head span {
@@ -105,43 +105,48 @@ p {
   color: #537FE7;
 }
 
-.skills {
-  text-align: center;
-  gap: 4rem;
+#skills {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.skillIcons {
+.skillsmain, .animate__fadeIn {
+  animation: fadeIn;
+  animation-duration: 2.4s; 
+}
+
+.container1,.container2,.container3 {
+  background-color: rgba(54, 95, 190, 0.2);
+  width: 21.5rem;
+  height: 27rem;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.html-skill,.css-skill,.js-skill {
+  display: flex;
   position: relative;
-  width: 10rem;
+  z-index: 1;
+  justify-content: center;
 }
 
-.skill1, .skill3 {
-  margin-left: 20rem;
-  float: left;
-}
-
-.skillText,.skillText3 {
-  float: right;
+.skillsLogo {
+  padding: 8px;
+  position: absolute;
   display: flex;
-  width: 50rem;
-  margin-bottom: 6rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #537FE7;
+  background-color: #E9F8F9;
+  border-radius: 50px;
 }
 
-.skill2 {
-  margin-right: 20rem;
-  float: right;
+#skills p {
+  margin-top: 2.5rem;
 }
 
-.skillText2 {
-  display: flex;
-  width: 50rem;
-  float: left;
-  margin-bottom: 6rem;
-}
 
-.skills p {
-  font-weight: 500;
-}
 @keyframes fadeIn {
   from {
     scale: 0.1;
