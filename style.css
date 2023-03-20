@@ -146,6 +146,9 @@ p {
   margin-top: 2.5rem;
 }
 
+#skills p span {
+  color: #537FE7;
+}
 
 @keyframes fadeIn {
   from {
